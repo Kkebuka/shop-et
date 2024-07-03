@@ -1,37 +1,49 @@
 import React from "react";
 import women from "../assets/women/women.png";
 import women2 from "../assets/women/women2.jpg";
-// import women3 from "../assets/women/women3.png";
-import women4 from "../assets/women/women4.png";
+import women3 from "../assets/women/women3.jpg";
+import women4 from "../assets/women/women4.jpg";
 import women5 from "../assets/hero/women.png";
 
+console.log(women);
 function TopGridView() {
   const gridProperty = [
     { id: 0, title: "Women Ethic", color: "White", image: women, rating: "" },
-    { id: 1, title: "Women Western", color: "Red", image: women2, rating: "" },
+    {
+      id: 1,
+      title: "Women Western",
+      color: "Red",
+      image: women2,
+      rating: "",
+    },
     {
       id: 2,
       title: "Women Glasses",
       color: "Brown",
-      image: women2,
+      image: women3,
       rating: "",
     },
     {
       id: 3,
       title: "Printed T-shirt",
       color: "Yellow",
-      image: women4,
+      image: women5,
       rating: "",
     },
-    { id: 4, title: "Fancy Bags", color: "Pink", image: women5, rating: "" },
+    { id: 4, title: "Fancy Bags", color: "Pink", image: women4, rating: "" },
   ];
   return (
-    <div>
+    <div className="container mx-auto flex flex-col items-center space-y-5 lg:flex-row lg:justify-evenly">
       {gridProperty.map((single) => (
-        <div key={single.id}>
-          <img src={single.image} alt="" />
-          <strong>{single.title}</strong>
-          <p>{single.color}</p>
+        <div className="space-y-3">
+          <img
+            src={single.image}
+            alt=""
+            key={single.id}
+            className="w-[150px] h-[220px] object-cover rounded-md"
+          />
+          <strong className="font-semibold">{single.title}</strong>
+          <p className="text-sm text-gray-600">{single.color}</p>
         </div>
       ))}
     </div>
