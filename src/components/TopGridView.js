@@ -33,16 +33,15 @@ function TopGridView() {
     { id: 4, title: "Fancy Bags", color: "Pink", image: women4, rating: "" },
   ];
   return (
-    <div className="container mx-auto flex flex-col items-center space-y-5 lg:flex-row lg:justify-evenly">
+    <div className="container mx-auto flex flex-col items-center space-y-5 lg:flex-row lg:justify-evenly ">
       {gridProperty.map((single) => (
-        <div className="space-y-3">
+        <div className="space-y-3" key={single.id}>
           <img
             src={single.image}
             alt=""
-            key={single.id}
             className="w-[150px] h-[220px] object-cover rounded-md"
           />
-          <strong className="font-semibold">{single.title}</strong>
+          <strong className="font-semibold mt-8">{single.title}</strong>
           <p className="text-sm text-gray-600">{single.color}</p>
         </div>
       ))}
