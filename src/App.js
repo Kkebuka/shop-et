@@ -1,7 +1,10 @@
 import "./App.css";
+import Footer from "./Footer";
+import Testimonials from "./Testimonials";
 import Banner from "./components/Banner";
 import BestProducts from "./components/BestProducts";
 import Navbar from "./components/Navbar";
+import Notify from "./components/Notify";
 import TopProduct from "./components/TopProduct";
 import WinterSale from "./components/WinterSale";
 
@@ -13,6 +16,9 @@ function App() {
       <TopProduct />
       <BestProducts />
       <WinterSale />
+      <Notify />
+      <Testimonials />
+      <Footer />
     </>
   );
 }
