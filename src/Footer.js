@@ -3,13 +3,13 @@ import logo from "./assets/logo.png";
 
 function Footer() {
   return (
-    <div className=" flex flex-col lg:flex-row">
-      <div>
-        <div>
-          <img src={logo} alt="logo" className=" w-6" />
+    <div className=" container mx-auto flex flex-col gap-0 lg:flex-row lg:gap-16 h-[300px]">
+      <div className=" w-[100%] lg:w-[40%]">
+        <div className="flex">
+          <img src={logo} alt="logo" className=" w-12" />
           <h2>Shop-et</h2>
         </div>
-        <div>
+        <div className="">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est magni
           sunt ipsum, aliquid ratione minima fugit quaerat!
         </div>
