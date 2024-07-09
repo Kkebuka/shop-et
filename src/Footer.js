@@ -3,9 +3,9 @@ import logo from "./assets/logo.png";
 
 function Footer() {
   return (
-    <div className=" container mx-auto flex flex-col gap-0 lg:flex-row lg:gap-16 h-[300px]">
-      <div className=" w-[100%] lg:w-[40%]">
-        <div className="flex">
+    <div className=" container mx-auto flex flex-col pl-5 pt-12 gap-0 lg:flex-row lg:gap-16 h-[400px] ">
+      <div className=" w-[100%] lg:w-[40%] ">
+        <div className="flex items-center gap-2">
           <img src={logo} alt="logo" className=" w-12" />
           <h2>Shop-et</h2>
         </div>
@@ -44,7 +44,7 @@ function Footer() {
           <p>Blog</p>
         </a>
       </div>
-      <div>
+      <div className="lg:pl-12">
         {/* Social media icons */}
         <div>
           <p>Lagos, Nigeria</p>
