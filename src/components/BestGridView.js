@@ -28,8 +28,8 @@ function BestGridView() {
     },
   ];
   return (
-    <div>
-      <div className=" h-auto flex shadow-lg justify-evenly py-6 ">
+    <div className="py-6">
+      <div className=" h-auto flex flex-col shadow-lg justify-evenly items-center lg:flex-row  ">
         {bestImages.map((bestImage) => (
           <div key={bestImage.id} className="flex flex-col w-[200px]">
             {/* Space for rating star */}
