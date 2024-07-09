@@ -1,6 +1,6 @@
 import "./App.css";
-import Footer from "./Footer";
-import Testimonials from "./Testimonials";
+import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
 import Banner from "./components/Banner";
 import BestProducts from "./components/BestProducts";
 import Navbar from "./components/Navbar";
