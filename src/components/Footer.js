@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer() {
   return (
@@ -30,7 +33,7 @@ function Footer() {
         </a>
       </div>
       <div>
-        <strong>Important Links</strong>
+        <strong>Other Links</strong>
         <a href="#">
           <p>Home</p>
         </a>
@@ -46,6 +49,9 @@ function Footer() {
       </div>
       <div className="lg:pl-12">
         {/* Social media icons */}
+        <FacebookIcon />
+        <InstagramIcon />
+        <LinkedInIcon />
         <div>
           <p>Lagos, Nigeria</p>
         </div>

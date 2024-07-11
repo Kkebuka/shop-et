@@ -12,15 +12,17 @@ function WinterSale() {
     <div className="  container mx-auto flex flex-col items-center justify-evenly lg:flex-row mb-4">
       <img src={woman} alt="woman with bags" className="w-[500px] " />
       <div className="px-4 py-6 flex flex-col gap-3 lg:w-[700px]">
-        <strong>Winter Sale upto 50% Off</strong>
-        <p>
+        <strong className="text-2xl text-center lg:text-3xl ">
+          Winter Sale upto 50% Off
+        </strong>
+        <p className="text-sm ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam esse
           veniam velit quasi quidem deserunt ipsum dolor sit amet consectetur!
         </p>
         {qualities.map((quality) => (
           <div key={quality.key}>
             {/* icon here */}
-            <h2>{quality.text}</h2>
+            <h2 className="text-">{quality.text}</h2>
           </div>
         ))}
       </div>

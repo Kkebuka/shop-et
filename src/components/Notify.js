@@ -6,7 +6,7 @@ function Notify() {
       <strong className="text-2xl mb-4">Get Notified About New Products</strong>
       <input
         type="email"
-        className="w-[90%] px-4 h-10 lg-[400px] text-lg"
+        className="w-[90%] px-4 h-10 lg-[400px] text-lg lg:w-[500px]"
         placeholder="Enter your email"
       />
     </div>
