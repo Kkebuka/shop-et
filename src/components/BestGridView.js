@@ -30,7 +30,7 @@ function BestGridView() {
   ];
   return (
     <div className="py-6">
-      <div className=" h-auto flex flex-col shadow-lg justify-evenly items-center lg:flex-row  ">
+      <div className=" h-auto flex flex-col  justify-evenly items-center lg:flex-row  ">
         {bestImages.map((bestImage) => (
           <div key={bestImage.id} className="flex flex-col w-[200px]">
             {/* Space for rating star */}
@@ -45,8 +45,10 @@ function BestGridView() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center">
-        <button className="w-32 h-10 mx-auto">Order Now</button>
+      <div className="flex justify-center mt-4">
+        <button className="w-32 h-10 mx-auto bg-button-color rounded-md">
+          Order Now
+        </button>
       </div>
     </div>
   );

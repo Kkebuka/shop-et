@@ -8,10 +8,10 @@ function Navbar() {
         <img src={logo} alt="logo" className=" w-6" />
         <h2 className="from-neutral-600">Shop-et</h2>
       </div>
-      <div className="  gap-4 hidden lg:block lg:flex  ">
+      <div className="  gap-4 hidden  lg:flex  w-[600px] ">
         <a
           href="#"
-          className=" hover:bg-amber-200 hover:text-lg  px-3 rounded-md"
+          className=" hover:bg-amber-200 hover:text-[1.1rem] px-3 rounded-md"
         >
           Men's Wear
         </a>

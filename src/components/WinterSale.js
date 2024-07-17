@@ -10,7 +10,11 @@ function WinterSale() {
   ];
   return (
     <div className="  container mx-auto flex flex-col items-center justify-evenly lg:flex-row mb-4">
-      <img src={woman} alt="woman with bags" className="w-[500px] " />
+      <img
+        src={woman}
+        alt="woman with bags"
+        className="w-[500px] bg-background-color shadow-2xl "
+      />
       <div className="px-4 py-6 flex flex-col gap-3 lg:w-[700px]">
         <strong className="text-2xl text-center lg:text-4xl ">
           Winter Sale upto 50% Off
@@ -20,10 +24,10 @@ function WinterSale() {
           veniam velit quasi quidem deserunt ipsum dolor sit amet consectetur!
         </p>
         {qualities.map((quality) => (
-          <div key={quality.key}>
+          <div key={quality.key} className="flex gap-4 items-center my-2">
             <i class={quality.icon}></i>
             {/* icon here */}
-            <h2 className="text-">{quality.text}</h2>
+            <h2 className="">{quality.text}</h2>
           </div>
         ))}
       </div>
