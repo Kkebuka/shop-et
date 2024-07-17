@@ -6,7 +6,7 @@ function BestProducts() {
     <div>
       <div className="flex flex-col items-center">
         <strong>Best Products</strong>
-        <p>
+        <p className="font-Poppin">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
           molestiae illo nihil!
         </p>

@@ -17,6 +17,7 @@ function App() {
       <BestProducts />
       <WinterSale />
       <Notify />
+      <TopProduct />
       <Testimonials />
       <Footer />
     </>
