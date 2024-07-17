@@ -3,10 +3,14 @@ import logo from "../assets/logo.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import footerImg from "../assets/website/footer-pattern.jpg";
 
 function Footer() {
   return (
-    <div className=" container mx-auto flex flex-col pl-5 pt-12 gap-0 lg:flex-row lg:gap-16 h-[400px] ">
+    <div
+      className=" flex flex-col pl-5 pt-12 gap-0 lg:flex-row lg:gap-16 h-[400px]   w-full  bg-contain bg-cover bg-center text-white"
+      style={{ backgroundImage: `url(${footerImg})` }}
+    >
       <div className=" w-[100%] lg:w-[40%] ">
         <div className="flex items-center gap-2">
           <img src={logo} alt="logo" className=" w-12" />
@@ -18,33 +22,33 @@ function Footer() {
         </div>
       </div>
       <div>
-        <strong>Important Links</strong>
+        <strong className="">Important Links</strong>
         <a href="#">
-          <p>Home</p>
+          <p className="my-3">Home</p>
         </a>
         <a href="#">
-          <p>About</p>
+          <p className="mb-3">About</p>
         </a>
         <a href="#">
-          <p>Contact</p>
+          <p className="mb-3">Contact</p>
         </a>
         <a href="#">
-          <p>Blog</p>
+          <p className="mb-3">Blog</p>
         </a>
       </div>
       <div>
         <strong>Other Links</strong>
         <a href="#">
-          <p>Home</p>
+          <p className="my-3">Home</p>
         </a>
         <a href="#">
-          <p>About</p>
+          <p className="mb-3">About</p>
         </a>
         <a href="#">
-          <p>Contact</p>
+          <p className="mb-3">Contact</p>
         </a>
         <a href="#">
-          <p>Blog</p>
+          <p className="mb-3">Blog</p>
         </a>
       </div>
       <div className="lg:pl-12">
@@ -53,10 +57,10 @@ function Footer() {
         <InstagramIcon />
         <LinkedInIcon />
         <div>
-          <p>Lagos, Nigeria</p>
+          <p className="my-3">Lagos, Nigeria</p>
         </div>
         <div>
-          <p>+2348144858370</p>
+          <p className="mb-3">+2348144858370</p>
         </div>
       </div>
     </div>
