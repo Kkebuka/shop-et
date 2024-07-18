@@ -24,38 +24,54 @@ function Footer() {
       <div>
         <strong className="">Important Links</strong>
         <a href="#">
-          <p className="my-3">Home</p>
+          <p className="my-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
+            Home
+          </p>
         </a>
         <a href="#">
-          <p className="mb-3">About</p>
+          <p className="mb-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
+            About
+          </p>
         </a>
         <a href="#">
-          <p className="mb-3">Contact</p>
+          <p className="mb-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
+            Contact
+          </p>
         </a>
         <a href="#">
-          <p className="mb-3">Blog</p>
+          <p className="mb-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
+            Blog
+          </p>
         </a>
       </div>
       <div>
         <strong>Other Links</strong>
         <a href="#">
-          <p className="my-3">Home</p>
+          <p className="my-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
+            Home
+          </p>
         </a>
         <a href="#">
-          <p className="mb-3">About</p>
+          <p className="mb-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
+            About
+          </p>
         </a>
         <a href="#">
-          <p className="mb-3">Contact</p>
+          <p className="mb-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
+            Contact
+          </p>
         </a>
         <a href="#">
-          <p className="mb-3">Blog</p>
+          <p className="mb-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
+            Blog
+          </p>
         </a>
       </div>
       <div className="lg:pl-12">
         {/* Social media icons */}
-        <FacebookIcon />
-        <InstagramIcon />
-        <LinkedInIcon />
+        <FacebookIcon className="ml-2" />
+        <InstagramIcon className="ml-2" />
+        <LinkedInIcon className="ml-2" />
         <div>
           <p className="my-3">Lagos, Nigeria</p>
         </div>
