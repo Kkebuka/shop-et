@@ -40,7 +40,7 @@ function TopGridView() {
           <img
             src={single.image}
             alt=""
-            className="w-[150px] h-[220px] object-cover rounded-md"
+            className="w-[150px] h-[220px] object-cover rounded-md animate-jump"
           />
           <strong className="font-semibold mt-8">{single.title}</strong>
           <p className="text-sm text-gray-600">{single.color}</p>
