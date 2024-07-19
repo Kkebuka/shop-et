@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/shop-et/static/css/main.16e248bd.css",
+    "main.js": "/shop-et/static/js/main.cfca8351.js",
+    "static/media/shirt.png": "/shop-et/static/media/shirt.2158cfde59d98537adbe.png",
+    "static/media/shirt2.png": "/shop-et/static/media/shirt2.5204a164260500adea6d.png",
+    "static/media/footer-pattern.jpg": "/shop-et/static/media/footer-pattern.d94c5e9235299d4c3677.jpg",
+    "static/media/women.png": "/shop-et/static/media/women.f171f124df4d16b65029.png",
+    "static/media/sale.png": "/shop-et/static/media/sale.520f3174bffb33116128.png",
+    "static/media/shopping.png": "/shop-et/static/media/shopping.5df962e820edb4d3a124.png",
+    "static/media/shirt3.png": "/shop-et/static/media/shirt3.7f145304848763ce4ee4.png",
+    "static/media/logo.png": "/shop-et/static/media/logo.f8d205c6d3469a2037b6.png",
+    "static/media/women3.jpg": "/shop-et/static/media/women3.d4ee3d6adcf98524fedb.jpg",
+    "static/media/women4.jpg": "/shop-et/static/media/women4.de4d6fb7a9937264471c.jpg",
+    "static/media/women2.jpg": "/shop-et/static/media/women2.b095b5ece1ec61c6769b.jpg",
+    "index.html": "/shop-et/index.html",
+    "main.16e248bd.css.map": "/shop-et/static/css/main.16e248bd.css.map",
+    "main.cfca8351.js.map": "/shop-et/static/js/main.cfca8351.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16e248bd.css",
+    "static/js/main.cfca8351.js"
+  ]
+}
