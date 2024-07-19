@@ -8,7 +8,7 @@ import footerImg from "../assets/website/footer-pattern.jpg";
 function Footer() {
   return (
     <div
-      className=" flex flex-col pl-5 pt-12 gap-0 lg:flex-row lg:gap-16 h-[400px]   w-full  bg-contain bg-cover bg-center text-white"
+      className=" flex flex-wrap gap-x-16 pl-5 pt-12  lg:flex-row lg:gap-16 h-[800px] lg:h-[400px]  w-full  bg-cover bg-center text-white"
       style={{ backgroundImage: `url(${footerImg})` }}
     >
       <div className=" w-[100%] lg:w-[40%] ">
@@ -16,12 +16,13 @@ function Footer() {
           <img src={logo} alt="logo" className=" w-12" />
           <h2>Shop-et</h2>
         </div>
-        <div className="">
+        <div className="mt-4">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est magni
-          sunt ipsum, aliquid ratione minima fugit quaerat!
+          sunt ipsum, aliquid ratione minima fugit quaerat! Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Perferendis, ipsum?
         </div>
       </div>
-      <div>
+      <div className="h-[200px]">
         <strong className="">Important Links</strong>
         <a href="#">
           <p className="my-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
@@ -44,7 +45,7 @@ function Footer() {
           </p>
         </a>
       </div>
-      <div>
+      <div className="h-[200px]">
         <strong>Other Links</strong>
         <a href="#">
           <p className="my-3 hover:text-orange-500 hover:ml-2 ease-in-out duration-300">
@@ -67,7 +68,7 @@ function Footer() {
           </p>
         </a>
       </div>
-      <div className="lg:pl-12">
+      <div className=" h-[200px] lg:pl-12">
         {/* Social media icons */}
         <FacebookIcon className="ml-2" />
         <InstagramIcon className="ml-2" />

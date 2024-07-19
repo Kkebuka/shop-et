@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import women from "../assets/women/women.png";
 import women2 from "../assets/women/women2.jpg";
 import women3 from "../assets/women/women3.jpg";
@@ -8,6 +9,15 @@ import StarIcon from "@mui/icons-material/Star";
 
 console.log(women);
 function TopGridView() {
+  const [isVisible, setIsVisible] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+
+  // When component is first in view, set isVisible to true
+  if (inView && !isVisible) {
+    setIsVisible(true);
+  }
   const gridProperty = [
     { id: 0, title: "Women Ethic", color: "White", image: women, rating: 4.4 },
     {
@@ -34,7 +44,14 @@ function TopGridView() {
     { id: 4, title: "Fancy Bags", color: "Pink", image: women4, rating: 4.7 },
   ];
   return (
-    <div className="container mx-auto flex flex-col items-center space-y-5 lg:flex-row lg:justify-evenly ">
+    <div
+      ref={ref}
+      className={`container mx-auto flex flex-col items-center space-y-5 lg:flex-row lg:justify-evenly ${
+        isVisible
+          ? "animate-in slide-in-from-bottom  ease-in duration-1000"
+          : ""
+      }`}
+    >
       {gridProperty.map((single) => (
         <div className="space-y-3" key={single.id}>
           <img

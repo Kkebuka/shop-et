@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "button-color": "#F99F1C",
         "background-color": "#FBB637",
+        "background-gray": "#F3F4F6",
       },
     },
   },

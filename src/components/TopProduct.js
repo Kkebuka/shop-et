@@ -11,7 +11,7 @@ function TopProduct() {
         ducimus non!
       </p>
       <TopGridView />
-      <button className="mt-12 p-4 bg-button-color rounded-md">
+      <button className="mt-8 p-3 bg-button-color rounded-md">
         View All Products
       </button>
     </div>

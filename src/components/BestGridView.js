@@ -1,4 +1,3 @@
-import React from "react";
 import shirt from "../assets/shirt/shirt.png";
 import shirt2 from "../assets/shirt/shirt3.png";
 import shirt1 from "../assets/shirt/shirt2.png";
@@ -30,11 +29,13 @@ function BestGridView() {
   ];
   return (
     <div className="py-6">
-      <div className=" h-auto flex flex-col  justify-evenly items-center lg:flex-row  pt-24 ">
+      <div
+        className={`h-auto flex flex-col  justify-evenly items-center lg:flex-row  pt-24 gap-[150px]  lg:gap-2`}
+      >
         {bestImages.map((bestImage) => (
           <div
             key={bestImage.id}
-            className="flex flex-col w-[350px] items-center hover:bg-black text-white ease-in-out duration-300"
+            className="flex flex-col w-[350px] items-center hover:bg-gray-900 hover:text-white ease-in-out duration-300 rounded-md shadow-lg cursor-pointer"
           >
             {/* Space for rating star */}
 
@@ -43,17 +44,19 @@ function BestGridView() {
               alt=""
               className="relative -top-20 w-[200px]"
             />
-            <div className="flex justify-center">
+            <div className="flex justify-center relative -top-12">
               <Rating name="read-only" value={bestImage.rating} readOnly />
             </div>
 
-            <strong className="text-center">{bestImage.title}</strong>
-            <p className="text-center">{bestImage.text}</p>
+            <strong className="text-center relative -top-12">
+              {bestImage.title}
+            </strong>
+            <p className="text-center relative -top-12">{bestImage.text}</p>
           </div>
         ))}
       </div>
       <div className="flex justify-center mt-4">
-        <button className="w-32 h-10 mx-auto bg-button-color rounded-md">
+        <button className="w-32 h-10 mx-auto bg-button-color rounded-md ">
           Order Now
         </button>
       </div>

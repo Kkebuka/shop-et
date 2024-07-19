@@ -9,11 +9,11 @@ function WinterSale() {
     { key: 3, icon: "fa-solid fa-atom", text: "Get Offers" },
   ];
   return (
-    <div className="  container mx-auto flex flex-col items-center justify-evenly lg:flex-row mb-4">
+    <div className="  container mx-auto flex flex-col items-center px-3 justify-evenly lg:flex-row mb-4 bg-background-gray py-12 rounded-md">
       <img
         src={woman}
         alt="woman with bags"
-        className="w-[500px] bg-background-color shadow-2xl "
+        className="w-[500px] bg-background-color shadow-2xl drop-shadow-xl"
       />
       <div className="px-4 py-6 flex flex-col gap-3 lg:w-[700px]">
         <strong className="text-2xl text-center lg:text-4xl ">
